@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import ClickCounter from './ClickCounter'
-import registerServiceWorker from './registerServiceWorker';
+import registerServiceWorker from './registerServiceWorker'
+import ControlPanel from './components/fluxDemo/ControlPanel'
 
-ReactDOM.render(<ClickCounter />, document.getElementById('root'));
+ReactDOM.render(<ControlPanel />, document.getElementById('root'));
 registerServiceWorker();
