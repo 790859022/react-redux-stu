@@ -1,0 +1,113 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+.todo-app {
+  width: 400px;
+  font-size: 12px;
+  margin: 50px auto;
+  border: 1px solid #eee;
+  padding: 20px;
+}
+.todo-app .add-todo {
+  padding-right: 50px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.todo-app .add-todo .new-todo {
+  width: 100%;
+  font-size: 12px;
+  line-height: 2;
+  padding: 0 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  outline: none;
+}
+.todo-app .add-todo .add-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 26px;
+  width: 40px;
+  border: 1px solid #000;
+  background: #000;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.todo-app .todo-list {
+  list-style: none;
+}
+.todo-app .todo-list li {
+  list-style: none;
+  cursor: pointer;
+  border-bottom: 1px dashed #eee;
+  padding: 5px 0;
+}
+.todo-app .todo-list li span {
+  float: right;
+  color: #999;
+}
+.todo-app .todo-list li [type="checkbox"] {
+  margin-right: 5px;
+}
+.todo-app .todo-list li:last-child {
+  border-bottom: none;
+}
+.todo-app .todo-list li.completed {
+  color: #999;
+  text-decoration: line-through;
+}
+.todo-app .todo-list li.fade-enter {
+  opacity: 0;
+  margin-left: 20px;
+  -webkit-transition: all 1s ease-in;
+  -moz-transition: all 1s ease-in;
+  -ms-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+.todo-app .todo-list li.fade-enter.fade-enter-active {
+  margin-left: 0;
+  opacity: 1;
+}
+.todo-app .todo-list li.fade-leave {
+  opacity: 1;
+  margin-left: 0px;
+  -webkit-transition: all 1s ease-in;
+  -moz-transition: all 1s ease-in;
+  -ms-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+.todo-app .todo-list li.fade-leave.fade-leave-active {
+  margin-left: 50px;
+  opacity: 0;
+}
+.todo-app .filters a {
+  color: #999;
+  margin-right: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.todo-app .filters a.active {
+  color: #000;
+}
+.todo-app .move-left-box {
+  width: 100px;
+  height: 100px;
+  background: #f00;
+  -webkit-transition: all 2s ease 2s;
+  -moz-transition: all 2s ease 2s;
+  -ms-transition: all 2s ease 2s;
+  -o-transition: all 2s ease 2s;
+  transition: all 2s ease 2s;
+}
+.todo-app .move-left-box:hover {
+  margin-left: 200px;
+  color: #fff;
+}

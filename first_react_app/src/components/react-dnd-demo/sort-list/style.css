@@ -1,0 +1,14 @@
+@charset "UTF-8";
+.sort-list {
+  font-size: 12px;
+  line-height: 1.4em;
+  width: 400px;
+  margin: 50px auto;
+}
+.sort-list .sort-item {
+  display: inline-block;
+  background: #fff;
+  margin: 5px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+}

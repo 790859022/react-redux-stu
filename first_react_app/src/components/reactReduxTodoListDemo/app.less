@@ -1,0 +1,119 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.todo-app {
+    width: 400px;
+    font-size: 12px;
+    margin: 50px auto;
+    border: 1px solid #eee;
+    padding: 20px;
+
+    .add-todo {
+        padding-right: 50px;
+        position: relative;
+        margin-bottom: 10px;
+        .new-todo {
+            width: 100%;
+            font-size: 12px;
+            line-height: 2;
+            padding: 0 4px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            border: 1px solid #000;
+            outline: none;
+        }
+        .add-btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 26px;
+            width: 40px;
+            border: 1px solid #000;
+            background: #000;
+            color: #fff;
+            outline: none;
+            cursor: pointer;
+            font-size: 20px;
+
+        }
+    }
+    .todo-list {
+        list-style: none;
+        li {
+            list-style: none;
+            cursor: pointer;
+            border-bottom: 1px dashed #eee;
+            padding: 5px 0;
+            span {
+                float: right;
+                color: #999;
+            }
+            [type="checkbox"] {
+                margin-right: 5px;
+            }
+            &:last-child {
+                border-bottom: none;
+            }
+            &.completed {
+                color: #999;
+                text-decoration: line-through;
+            }
+            &.fade-enter {
+                opacity: 0;
+                margin-left: 20px;
+                -webkit-transition: all 1s ease-in;
+                -moz-transition: all 1s ease-in;
+                -ms-transition: all 1s ease-in;
+                -o-transition: all 1s ease-in;
+                transition: all 1s ease-in;
+                &.fade-enter-active {
+                    margin-left: 0;
+                    opacity: 1;
+                }
+            }
+            &.fade-leave {
+                opacity: 1;
+                margin-left: 0px;
+                -webkit-transition: all 1s ease-in;
+                -moz-transition: all 1s ease-in;
+                -ms-transition: all 1s ease-in;
+                -o-transition: all 1s ease-in;
+                transition: all 1s ease-in;
+                &.fade-leave-active {
+                    margin-left: 50px;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    .filters {
+        a {
+            color: #999;
+            margin-right: 10px;
+            text-decoration: none;
+            cursor: pointer;
+            &.active {
+                color: #000;
+            }
+        }
+    }
+    .move-left-box {
+        width: 100px;
+        height: 100px;
+        background: #f00;
+        -webkit-transition: all 2s ease 2s;
+        -moz-transition: all 2s ease 2s;
+        -ms-transition: all 2s ease 2s;
+        -o-transition: all 2s ease 2s;
+        transition: all 2s ease 2s;
+
+        &:hover {
+            margin-left: 200px;
+            color: #fff;
+        }
+    }
+}
